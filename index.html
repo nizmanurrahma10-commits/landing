@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Mamah Tersayang 🤍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:'DM Sans',sans-serif;color:#5b4650;background:#fff8f9;overflow-x:hidden}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px 20px;position:relative;background:radial-gradient(circle at top,#ffe7ee,#fff8f9 58%,#f8edf1)}
+    .card{max-width:480px;width:100%;padding:25px 18px 38px}
+    .flower{font-size:24px;letter-spacing:10px;animation:float 3s ease-in-out infinite}
+    .stitch{width:min(280px,75vw);border-radius:32px;margin:18px auto 10px;display:block;filter:drop-shadow(0 15px 20px rgba(141,78,105,.15))}
+    h1,h2{font-family:'Playfair Display',serif;color:#8d4e69;margin:12px 0}
+    h1{font-size:clamp(2.2rem,9vw,3.7rem);line-height:1.08}
+    h2{font-size:clamp(2rem,8vw,3rem)}
+    p{font-size:1rem;line-height:1.8;color:#765d68}
+    .lead{font-size:1.08rem;max-width:390px;margin:0 auto 24px}
+    .btn{border:0;background:#a75d7b;color:white;padding:15px 25px;border-radius:999px;font-weight:700;font-size:1rem;box-shadow:0 10px 25px rgba(167,93,123,.25);cursor:pointer;transition:.2s}
+    .btn:active{transform:scale(.96)}
+    section{padding:72px 22px;text-align:center}
+    .soft{background:#fff}
+    .message{max-width:650px;margin:auto;background:#fff9fa;border:1px solid #f2dce4;border-radius:28px;padding:28px 22px;box-shadow:0 12px 35px rgba(124,78,96,.07);text-align:left}
+    .message p:first-letter{font-size:1.8rem;font-family:'Playfair Display',serif;color:#a75d7b}
+    .memory{max-width:650px;margin:24px auto 0;padding:26px;border:2px dashed #e6bccb;border-radius:24px;color:#9b7180;background:#fffafa}
+    .memory span{font-size:2rem;display:block;margin-bottom:8px}
+    footer{padding:50px 20px 70px;text-align:center;background:linear-gradient(#fff8f9,#f8e8ee)}
+    .heart{font-size:2rem;animation:pulse 1.8s infinite}
+    .hidden{display:none}
+    #surprise{position:fixed;inset:0;background:rgba(255,248,249,.97);z-index:20;display:none;align-items:center;justify-content:center;padding:25px;text-align:center}
+    #surprise.show{display:flex}
+    .surprise-box{max-width:430px}
+    .confetti{position:fixed;top:-20px;pointer-events:none;animation:fall linear forwards}
+    @keyframes float{50%{transform:translateY(-7px)}} @keyframes pulse{50%{transform:scale(1.12)}} @keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:.7}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="card">
+        <div class="flower">🌷 ✿ 🌷</div>
+        <img src="stitch-mamah.jpg" class="stitch" alt="Karakter lucu berwarna pink">
+        <h1>Untuk Mamah<br>Tersayang 🤍</h1>
+        <p class="lead">ini kado virtual untuk mamah !!!</p>
+        <button class="btn" onclick="document.getElementById('ucapan').scrollIntoView()">klik ini dongg ✨</button>
+      </div>
+    </section>
+
+    <section id="ucapan" class="soft">
+      <div class="flower">🌸 🤍 🌸</div>
+      <p class="lead">Hari ini adalah hari yang sangat spesial, karena hari ini adalah hari ulang tahunnya orang yang paling berharga di hidup ama. <br>jadi...............................</p>
+      <h2>Happy birthday,<br>Mamah! 🎂</h2>
+    </section>
+
+    <section>
+      <div class="message">
+        <h2>for Mom 💌</h2>
+        <p>Mamah, Selamat ulang tahun, Terima kasih sudah menjadi ibu yang sangat baik. Semoga Mama sehat selalu, panjang umur, dan selalu dalam perlindungan Allah.</p>
+        <p>Terima kasih karena selalu ada dan menjadi tempat pulang yang penuh kehangatan. Tidak ada hadiah yang benar-benar bisa membalas semua yang telah Mamah berikan.</p>
+        <p>Di hari ulang tahun Mamah ini, Mamah harus tahu bahwa Mamah sangat berarti dan sangat disayang. Semoga setiap langkah Mamah selalu ditemani kebahagiaan, kesehatan, dan hal-hal baik.</p>
+        <p><b>Semoga hari ini dan hari-hari berikutnya membawa banyak senyum untuk Mamah. 🤍</b></p>
+      </div>
+    </section>
+
+    <section class="soft">
+      <h2>memory 📸</h2>
+      <div class="memory">
+        <span>🌷</span>
+        <b>This is a small memory.</b>
+        <img src="stitch-mamah.jpg" class="stitch">
+    </section>
+
+    <footer>
+      <div class="heart">🤍</div>
+      <h2>Terima kasih sudah menjadi Mamah yang baik.✨</h2>
+      <p>from child to mother. 🌷</p>
+      <button class="btn" onclick="openSurprise()">klik untuk melihat yang spesial 🤍 🎁</button>
+    </footer>
+  </main>
+
+  <div id="surprise">
+    <div class="surprise-box">
+      <img src="stitch-mamah.jpg" class="stitch" alt="">
+      <h2>Happy Birthday, Mamah! 🎂🤍</h2>
+      <p>Semoga Mamah selalu bahagia, sehat, dan selamanya ada dalam perlindungan Allah. Terima kasih untuk semuanya. ama sayang Mamah. 🌷</p>
+      <button class="btn" onclick="closeSurprise()">salam sayang ama 🤍</button>
+    </div>
+  </div>
+
+  <script>
+    function openSurprise(){
+      document.getElementById('surprise').classList.add('show');
+      for(let i=0;i<35;i++){
+        const c=document.createElement('div');
+        c.className='confetti'; c.textContent=['🌸','🤍','✨','🌷'][i%4];
+        c.style.left=Math.random()*100+'vw';
+        c.style.animationDuration=(2+Math.random()*2)+'s';
+        c.style.fontSize=(14+Math.random()*16)+'px';
+        document.body.appendChild(c);
+        setTimeout(()=>c.remove(),4500);
+      }
+    }
+    function closeSurprise(){document.getElementById('surprise').classList.remove('show')}
+  </script>
+</body>
+</html>
